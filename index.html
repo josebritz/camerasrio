@@ -51,7 +51,7 @@
 
       document.addEventListener("DOMContentLoaded", function(e) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', 'http://aplicativo.cocr.com.br/cameras_api', true);
+        xhr.open('GET', 'https://aplicativo.cocr.com.br/cameras_api', true);
         xhr.onreadystatechange = function() {
           if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
             var locations = xhr.responseText.split("\n");
