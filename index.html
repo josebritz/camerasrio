@@ -22,7 +22,7 @@
 
         for (var i = 0; i < locations.length; i++) {
             let arr = locations[i].split(';');
-            let obj = {lat: parseFloat(arr[0]), lng: parseFloat(arr[1]), name: arr[2], url: 'http://187.111.99.18:9004/?CODE=' + arr[3]};
+            let obj = {lat: parseFloat(arr[0]), lng: parseFloat(arr[1]), name: arr[2], url: 'https://aplicativo.cocr.com.br/camera/' + arr[3]};
             
             if(obj.lat !== undefined && !isNaN(obj.lat)) {
               mapLocations.push(obj);
